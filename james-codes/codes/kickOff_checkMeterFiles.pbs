@@ -1,0 +1,13 @@
+#!/bin/bash
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=12:00:00
+#PBS -N JE
+#PBS -j oe
+#PBS -q cluster.q
+#PBS -V
+
+DIR=/users/james/SSE
+DIR2=lustre/sse
+
+${DIR}/codes/checkMeterFiles ${DIR2}/raw_by_meter/meter ${DIR2}/raw_by_meter/count.dat
+

@@ -1,0 +1,12 @@
+#!/bin/bash
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=0:05:00
+#PBS -N JE
+#PBS -j oe
+#PBS -q cluster.q
+#PBS -V
+
+DIR=/users/james/SSE
+
+${DIR}/spark/bin/spark-submit ${DIR}/codes/sse.py
+

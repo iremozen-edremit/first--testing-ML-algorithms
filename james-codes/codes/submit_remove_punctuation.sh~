@@ -1,0 +1,6 @@
+#!/bin/bash
+for i in `seq 4500 4999`;
+do
+   qsub -v NUMBERARG=$i kickOff_remove_punctuation.pbs
+done    
+       

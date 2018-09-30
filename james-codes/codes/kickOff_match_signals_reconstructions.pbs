@@ -1,0 +1,13 @@
+#!/bin/bash
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=6:00:00
+#PBS -N JE
+#PBS -j oe
+#PBS -q cluster.q
+#PBS -V
+
+DIR=/users/james/SSE
+DIR2=lustre/sse
+
+${DIR}/codes/match_signals_reconstructions ${DIR2}/results/wavelet/signals_0.dat ${DIR2}/results/reconstruction/reconstructed_signals_100.dat ${DIR2}/results/reconstruction/matched_signal_100 ${DIR2}/results/reconstruction/infofile_matched_100.dat
+

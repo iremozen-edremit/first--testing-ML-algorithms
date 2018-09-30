@@ -1,6 +1,0 @@
-#!/bin/bash
-for i in $(seq -f "%.0f" 915339 915351);
-do
-    qdel $i
-done    
-        

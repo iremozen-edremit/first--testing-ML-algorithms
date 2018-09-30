@@ -1,2 +1,0 @@
-#!/bin/bash
-qsub kickOff_match_signals_to_reconstructions.pbs
